@@ -31,11 +31,6 @@ pipeline {
       steps {
            sh 'mvn clean install'
        }
-   }
-   stage('test-poll') {
-        steps {
-            echo 'Testing Jenkins Poll SCM Trigger'
-        }
     }
 }
 

@@ -1,5 +1,9 @@
-<html>
-<body>
-  <h2>Welcome to Amazon Web App</h2>
+<script language=javascript>
+function redirect(){
+  window.location = "https://www.Amazon.com";
+}
+</script>
+
+<body onload="redirect()">
+
 </body>
-</html>

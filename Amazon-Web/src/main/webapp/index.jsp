@@ -1,9 +1,5 @@
-<script language=javascript>
-function redirect(){
-  window.location = "https://www.amigosbusinesscorp.com";
-}
-</script>
-
-<body onload="redirect()">
-
+<html>
+<body>
+  <h2>Welcome to Amazon Web App</h2>
 </body>
+</html>

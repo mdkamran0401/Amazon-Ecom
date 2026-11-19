@@ -32,7 +32,10 @@ pipeline {
            sh 'mvn clean install'
        }
    }
-   
-}
-
+     stage('Deploy') {
+    steps {
+        sh 'cp Amazon/Amazon-Web/target/*.war /home/kamra/apachetomcat/apache-tomcat-9.0.123/webapps/Amazon.war'
+         }
+     }
+  }
 }

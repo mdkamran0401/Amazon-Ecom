@@ -34,10 +34,7 @@ pipeline {
    }
      stage('Deploy') {
     steps {
-       sh '''
-              cp Amazon-Web/target/Amazon.war /home/kamra/apachetomcat/apache-tomcat-9.0.123/webapps/Amazon.war
-              /home/kamra/apachetomcat/apache-tomcat-9.0.123/bin/startup.sh
-           '''
+       sh  'cp Amazon-Web/target/*.war /home/kamra/apachetomcat/apache-tomcat-9.0.123/webapps/Amazon.war'
          }
      }
   }
